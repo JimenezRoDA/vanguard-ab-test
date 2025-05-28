@@ -1,0 +1,21 @@
+/* Fondo general */
+.stApp {
+    background-color: #f4f6fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Títulos principales */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Métricas */
+[data-testid="stMetricValue"] {
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 14px;
+    color: #6c757d;
+}
