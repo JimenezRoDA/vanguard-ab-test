@@ -1,0 +1,1990 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='df_web' inline='true' name='federated.0m1lps31l35gpa14h4rg71w7f1b6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_web' name='textscan.135tcb216mam1n15v9yfs1vurcri'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/rocio/OneDrive/Escritorio/Bootcamp_DA/Analyst data/Proyectos/vanguard-ab-test/data/processed/df_web.csv' dataRefreshTime='' directory='C:/Users/rocio/OneDrive/Escritorio/Bootcamp_DA/Analyst data/Proyectos/vanguard-ab-test/data/processed' filename='C:/Users/rocio/AppData/Local/Temp/TableauTemp/0efb4nt1ix6xif16eui5h0dxv13q/df_web.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.135tcb216mam1n15v9yfs1vurcri' name='df_web.csv' table='[df_web#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:P10001:no:A1:P2147483647:1' header='yes' locale='es_ES' separator=','>
+            <column datatype='integer' name='client_id' ordinal='0' />
+            <column datatype='string' name='visitor_id' ordinal='1' />
+            <column datatype='string' name='visit_id' ordinal='2' />
+            <column datatype='string' name='process_step' ordinal='3' />
+            <column datatype='datetime' name='date_time' ordinal='4' />
+            <column datatype='string' name='Variation' ordinal='5' />
+            <column datatype='string' name='time_diff' ordinal='6' />
+            <column datatype='integer' name='time_diff_sec' ordinal='7' />
+            <column datatype='integer' name='step_num' ordinal='8' />
+            <column datatype='integer' name='prev_step_num' ordinal='9' />
+            <column datatype='string' name='prev_step' ordinal='10' />
+            <column datatype='boolean' name='repetido_mismo_paso' ordinal='11' />
+            <column datatype='boolean' name='retroceso_cero' ordinal='12' />
+            <column datatype='boolean' name='salto_grande_atras' ordinal='13' />
+            <column datatype='boolean' name='salto_grande_adelante' ordinal='14' />
+            <column datatype='boolean' name='es_error' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P10001:no:A1:P2147483647:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>45750</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visitor_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[visitor_id]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>visitor_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visit_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[visit_id]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>visit_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_time]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>date_time</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Variation]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>Variation</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_diff</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[time_diff]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>time_diff</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_diff_sec</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[time_diff_sec]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>time_diff_sec</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>step_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[step_num]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>step_num</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prev_step_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prev_step_num]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>prev_step_num</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prev_step</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[prev_step]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>prev_step</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>repetido_mismo_paso</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[repetido_mismo_paso]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>repetido_mismo_paso</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retroceso_cero</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[retroceso_cero]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>retroceso_cero</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salto_grande_atras</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[salto_grande_atras]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>salto_grande_atras</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salto_grande_adelante</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[salto_grande_adelante]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>salto_grande_adelante</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>es_error</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[es_error]</local-name>
+            <parent-name>[df_web.csv]</parent-name>
+            <remote-alias>es_error</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Completion Rate' datatype='real' name='[Calculation_1242712036549664768]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Variation] :&#13;&#10;    SUM(&#13;&#10;        { FIXED [client_id] : MAX(IF [process_step] = &quot;confirm&quot; THEN 1 ELSE 0 END) }&#13;&#10;    )&#13;&#10;}&#13;&#10;/ &#13;&#10;{ FIXED [Variation] : COUNTD([client_id]) } * 100' />
+      </column>
+      <column caption='Completed Process' datatype='integer' name='[Calculation_1242712036551106561]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [client_id] : MAX(IF [process_step] = &quot;confirm&quot; THEN 1 ELSE 0 END) }' />
+      </column>
+      <column caption='Q1' datatype='real' name='[Calculation_1242712036557320198]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED : PERCENTILE([time_diff_sec], 0.25) }' />
+      </column>
+      <column caption='Q3' datatype='real' name='[Calculation_1242712036557393927]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED : PERCENTILE([time_diff_sec], 0.75) }' />
+      </column>
+      <column caption='IQR' datatype='real' name='[Calculation_1242712036557492232]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1242712036557393927] - [Calculation_1242712036557320198]' />
+      </column>
+      <column caption='lower bound' datatype='real' name='[Calculation_1242712036557570057]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1242712036557320198] - 1.5 * [Calculation_1242712036557492232]' />
+      </column>
+      <column caption='upper bound' datatype='real' name='[Calculation_1242712036557676554]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1242712036557393927] + 1.5 * [Calculation_1242712036557492232]' />
+      </column>
+      <column caption='outlier filter' datatype='string' name='[Calculation_1242712036557770763]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [time_diff_sec] &gt;= [Calculation_1242712036557570057] AND [time_diff_sec] &lt;= [Calculation_1242712036557676554] THEN &apos;Inlier&apos; ELSE &apos;Outlier&apos; END' />
+      </column>
+      <column caption='Error rate' datatype='real' name='[Calculation_1242712036561858572]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [es_error] THEN 1 ELSE 0 END) / COUNT([client_id]) * 100' />
+      </column>
+      <column caption='Condiciones cumplidas' datatype='boolean' name='[Calculation_1242712036591161357]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='NOT [es_error] AND NOT [repetido_mismo_paso] AND NOT [retroceso_cero] AND NOT [salto_grande_atras]' />
+      </column>
+      <column caption='Pasos correctos' datatype='integer' name='[Calculation_1242712036591415310]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_1242712036591161357] THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Paso válido' datatype='integer' name='[Calculation_1242712036591693839]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF NOT [es_error] AND NOT [repetido_mismo_paso] AND NOT [retroceso_cero] AND NOT [salto_grande_atras] THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Suma pasos válidos por cliente' datatype='integer' name='[Calculation_1242712036591779856]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [client_id] : SUM([Calculation_1242712036591693839]) }' />
+      </column>
+      <column caption='Success at the first time' datatype='string' name='[Calculation_1242712036591923217]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_1242712036591779856] = 5 THEN &apos;Success&apos; ELSE &apos;No success&apos; END' />
+      </column>
+      <column caption='Total time per client' datatype='integer' name='[Calculation_1242712036600274965]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [client_id] : SUM([time_diff_sec]) }' />
+      </column>
+      <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+      <column caption='df_web.csv' datatype='table' name='[__tableau_internal_object_id__].[df_web.csv_A7C97435C37B45AE85848CA52D547B01]' role='measure' type='quantitative' />
+      <column caption='Total Clients' datatype='integer' name='[client_id]' role='measure' type='quantitative' />
+      <column caption='Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+      <column caption='seconds' datatype='integer' name='[time_diff_sec]' role='measure' type='quantitative' />
+      <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+      <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1vet1lu1yp9fzy140wzsz0nbktgn.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/27/2025 09:46:42 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>client_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[client_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>client_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>df_web.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>258587</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>visitor_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[visitor_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>visitor_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>283378</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>visit_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[visit_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>visit_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>321923</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>process_step</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[process_step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>process_step</remote-alias>
+              <ordinal>3</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[date_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_time</remote-alias>
+              <ordinal>4</ordinal>
+              <family>df_web.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>701537</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Variation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Variation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Variation</remote-alias>
+              <ordinal>5</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time_diff</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[time_diff]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>time_diff</remote-alias>
+              <ordinal>6</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2194</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time_diff_sec</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[time_diff_sec]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>time_diff_sec</remote-alias>
+              <ordinal>7</ordinal>
+              <family>df_web.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2194</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>step_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[step_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>step_num</remote-alias>
+              <ordinal>8</ordinal>
+              <family>df_web.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prev_step_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[prev_step_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prev_step_num</remote-alias>
+              <ordinal>9</ordinal>
+              <family>df_web.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prev_step</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[prev_step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prev_step</remote-alias>
+              <ordinal>10</ordinal>
+              <family>df_web.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>repetido_mismo_paso</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[repetido_mismo_paso]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>repetido_mismo_paso</remote-alias>
+              <ordinal>11</ordinal>
+              <family>df_web.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retroceso_cero</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[retroceso_cero]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retroceso_cero</remote-alias>
+              <ordinal>12</ordinal>
+              <family>df_web.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>salto_grande_atras</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[salto_grande_atras]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>salto_grande_atras</remote-alias>
+              <ordinal>13</ordinal>
+              <family>df_web.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>salto_grande_adelante</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[salto_grande_adelante]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>salto_grande_adelante</remote-alias>
+              <ordinal>14</ordinal>
+              <family>df_web.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>es_error</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[es_error]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>es_error</remote-alias>
+              <ordinal>15</ordinal>
+              <family>df_web.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[df_web.csv_A7C97435C37B45AE85848CA52D547B01]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:process_step:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;step_3&quot;</bucket>
+            </map>
+            <map to='#347da0'>
+              <bucket>&quot;step_2&quot;</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>&quot;step_1&quot;</bucket>
+            </map>
+            <map to='#81c3cb'>
+              <bucket>&quot;start&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;confirm&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Variation:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;Test&quot;</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>&quot;no_experiment&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;Control&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='df_web.csv' id='df_web.csv_A7C97435C37B45AE85848CA52D547B01'>
+            <properties context=''>
+              <relation connection='textscan.135tcb216mam1n15v9yfs1vurcri' name='df_web.csv' table='[df_web#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:P10001:no:A1:P2147483647:1' header='yes' locale='es_ES' separator=','>
+                  <column datatype='integer' name='client_id' ordinal='0' />
+                  <column datatype='string' name='visitor_id' ordinal='1' />
+                  <column datatype='string' name='visit_id' ordinal='2' />
+                  <column datatype='string' name='process_step' ordinal='3' />
+                  <column datatype='datetime' name='date_time' ordinal='4' />
+                  <column datatype='string' name='Variation' ordinal='5' />
+                  <column datatype='string' name='time_diff' ordinal='6' />
+                  <column datatype='integer' name='time_diff_sec' ordinal='7' />
+                  <column datatype='integer' name='step_num' ordinal='8' />
+                  <column datatype='integer' name='prev_step_num' ordinal='9' />
+                  <column datatype='string' name='prev_step' ordinal='10' />
+                  <column datatype='boolean' name='repetido_mismo_paso' ordinal='11' />
+                  <column datatype='boolean' name='retroceso_cero' ordinal='12' />
+                  <column datatype='boolean' name='salto_grande_atras' ordinal='13' />
+                  <column datatype='boolean' name='salto_grande_adelante' ordinal='14' />
+                  <column datatype='boolean' name='es_error' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_web' name='federated.0m1lps31l35gpa14h4rg71w7f1b6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1lps31l35gpa14h4rg71w7f1b6'>
+            <column caption='Completion Rate' datatype='real' name='[Calculation_1242712036549664768]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Variation] :&#13;&#10;    SUM(&#13;&#10;        { FIXED [client_id] : MAX(IF [process_step] = &quot;confirm&quot; THEN 1 ELSE 0 END) }&#13;&#10;    )&#13;&#10;}&#13;&#10;/ &#13;&#10;{ FIXED [Variation] : COUNTD([client_id]) } * 100' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column caption='Total Clients' datatype='integer' name='[client_id]' role='measure' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column caption='Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1242712036549664768]' derivation='Sum' name='[sum:Calculation_1242712036549664768:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' />
+              <text column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[sum:Calculation_1242712036549664768:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#a0cbe8' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[sum:Calculation_1242712036549664768:qk]</rows>
+        <cols>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{08703D2E-C3AD-4280-B72B-C995110A9E0C}' />
+    </worksheet>
+    <worksheet name='Hoja 10'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Average Total Time per Client </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_web' name='federated.0m1lps31l35gpa14h4rg71w7f1b6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1lps31l35gpa14h4rg71w7f1b6'>
+            <column caption='Total time per client' datatype='integer' name='[Calculation_1242712036600274965]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [client_id] : SUM([time_diff_sec]) }' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1242712036600274965]' derivation='Avg' name='[avg:Calculation_1242712036600274965:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Clients' datatype='integer' name='[client_id]' role='measure' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column caption='seconds' datatype='integer' name='[time_diff_sec]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</rows>
+        <cols>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[avg:Calculation_1242712036600274965:qk]</cols>
+      </table>
+      <simple-id uuid='{EC5CF9CC-FD3B-4300-B4B6-FDE929E9C166}' />
+    </worksheet>
+    <worksheet name='Hoja 2'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_web' name='federated.0m1lps31l35gpa14h4rg71w7f1b6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1lps31l35gpa14h4rg71w7f1b6'>
+            <column caption='Completion Rate' datatype='real' name='[Calculation_1242712036549664768]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Variation] :&#13;&#10;    SUM(&#13;&#10;        { FIXED [client_id] : MAX(IF [process_step] = &quot;confirm&quot; THEN 1 ELSE 0 END) }&#13;&#10;    )&#13;&#10;}&#13;&#10;/ &#13;&#10;{ FIXED [Variation] : COUNTD([client_id]) } * 100' />
+            </column>
+            <column caption='Completed Process' datatype='integer' name='[Calculation_1242712036551106561]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [client_id] : MAX(IF [process_step] = &quot;confirm&quot; THEN 1 ELSE 0 END) }' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column caption='Total Clients' datatype='integer' name='[client_id]' role='measure' type='quantitative' />
+            <column-instance column='[client_id]' derivation='CountD' name='[ctd:client_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column caption='Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1242712036549664768]' derivation='Sum' name='[sum:Calculation_1242712036549664768:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1242712036551106561]' derivation='Sum' name='[sum:Calculation_1242712036551106561:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[ctd:client_id:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[sum:Calculation_1242712036551106561:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[sum:Calculation_1242712036549664768:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[ctd:client_id:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[sum:Calculation_1242712036551106561:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[sum:Calculation_1242712036549664768:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</column>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' value='57' />
+            <format attr='width' field='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[:Measure Names]' value='134' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#e9f3f2' />
+            <format attr='band-color' scope='rows' value='#b4d1d4' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</rows>
+        <cols>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{8DC6B1BD-2BE1-4141-A005-617852451763}' />
+    </worksheet>
+    <worksheet name='Hoja 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Process Duration by Variation Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_web' name='federated.0m1lps31l35gpa14h4rg71w7f1b6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1lps31l35gpa14h4rg71w7f1b6'>
+            <column caption='Q1' datatype='real' name='[Calculation_1242712036557320198]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : PERCENTILE([time_diff_sec], 0.25) }' />
+            </column>
+            <column caption='Q3' datatype='real' name='[Calculation_1242712036557393927]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : PERCENTILE([time_diff_sec], 0.75) }' />
+            </column>
+            <column caption='IQR' datatype='real' name='[Calculation_1242712036557492232]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1242712036557393927] - [Calculation_1242712036557320198]' />
+            </column>
+            <column caption='lower bound' datatype='real' name='[Calculation_1242712036557570057]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1242712036557320198] - 1.5 * [Calculation_1242712036557492232]' />
+            </column>
+            <column caption='upper bound' datatype='real' name='[Calculation_1242712036557676554]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1242712036557393927] + 1.5 * [Calculation_1242712036557492232]' />
+            </column>
+            <column caption='outlier filter' datatype='string' name='[Calculation_1242712036557770763]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [time_diff_sec] &gt;= [Calculation_1242712036557570057] AND [time_diff_sec] &lt;= [Calculation_1242712036557676554] THEN &apos;Inlier&apos; ELSE &apos;Outlier&apos; END' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1242712036557770763]' derivation='None' name='[none:Calculation_1242712036557770763:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column caption='Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[time_diff_sec]' derivation='Sum' name='[sum:time_diff_sec:qk]' pivot='key' type='quantitative' />
+            <column caption='seconds' datatype='integer' name='[time_diff_sec]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Calculation_1242712036557770763:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1242712036557770763:nk]' member='&quot;Inlier&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Calculation_1242712036557770763:nk]</column>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[sum:time_diff_sec:qk]</rows>
+        <cols>([federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:process_step:nk] / [federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk])</cols>
+      </table>
+      <simple-id uuid='{DE317091-CB09-4092-9FAF-3F84613751CA}' />
+    </worksheet>
+    <worksheet name='Hoja 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Step-by-step statistical summary</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_web' name='federated.0m1lps31l35gpa14h4rg71w7f1b6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1lps31l35gpa14h4rg71w7f1b6'>
+            <column caption='Q1' datatype='real' name='[Calculation_1242712036557320198]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : PERCENTILE([time_diff_sec], 0.25) }' />
+            </column>
+            <column caption='Q3' datatype='real' name='[Calculation_1242712036557393927]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : PERCENTILE([time_diff_sec], 0.75) }' />
+            </column>
+            <column caption='IQR' datatype='real' name='[Calculation_1242712036557492232]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1242712036557393927] - [Calculation_1242712036557320198]' />
+            </column>
+            <column caption='lower bound' datatype='real' name='[Calculation_1242712036557570057]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1242712036557320198] - 1.5 * [Calculation_1242712036557492232]' />
+            </column>
+            <column caption='upper bound' datatype='real' name='[Calculation_1242712036557676554]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_1242712036557393927] + 1.5 * [Calculation_1242712036557492232]' />
+            </column>
+            <column caption='outlier filter' datatype='string' name='[Calculation_1242712036557770763]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [time_diff_sec] &gt;= [Calculation_1242712036557570057] AND [time_diff_sec] &lt;= [Calculation_1242712036557676554] THEN &apos;Inlier&apos; ELSE &apos;Outlier&apos; END' />
+            </column>
+            <column-instance column='[time_diff_sec]' derivation='Avg' name='[avg:time_diff_sec:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[time_diff_sec]' derivation='Median' name='[med:time_diff_sec:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1242712036557770763]' derivation='None' name='[none:Calculation_1242712036557770763:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column-instance aggregation-param='25' column='[time_diff_sec]' derivation='Percentile' name='[prc25:time_diff_sec:qk]' pivot='key' type='quantitative' />
+            <column-instance aggregation-param='75' column='[time_diff_sec]' derivation='Percentile' name='[prc75:time_diff_sec:qk]' pivot='key' type='quantitative' />
+            <column caption='Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column caption='seconds' datatype='integer' name='[time_diff_sec]' role='measure' type='quantitative' />
+            <column-instance column='[time_diff_sec]' derivation='Var' name='[var:time_diff_sec:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[avg:time_diff_sec:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[med:time_diff_sec:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[prc25:time_diff_sec:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[prc75:time_diff_sec:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[avg:time_diff_sec:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[med:time_diff_sec:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[prc25:time_diff_sec:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[prc75:time_diff_sec:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0m1lps31l35gpa14h4rg71w7f1b6].[var:time_diff_sec:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Calculation_1242712036557770763:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1242712036557770763:nk]' member='&quot;Inlier&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:process_step:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;start&quot;</bucket>
+              <bucket>&quot;step_1&quot;</bucket>
+              <bucket>&quot;step_2&quot;</bucket>
+              <bucket>&quot;step_3&quot;</bucket>
+              <bucket>&quot;confirm&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Calculation_1242712036557770763:nk]</column>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[:Measure Names]' value='142' />
+            <format attr='height' field='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:process_step:nk]' value='28' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:process_step:nk]</rows>
+        <cols>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{F8C25833-D484-45CC-9D58-BF6D572EA701}' />
+    </worksheet>
+    <worksheet name='Hoja 5'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_web' name='federated.0m1lps31l35gpa14h4rg71w7f1b6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1lps31l35gpa14h4rg71w7f1b6'>
+            <column caption='Error rate' datatype='real' name='[Calculation_1242712036561858572]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [es_error] THEN 1 ELSE 0 END) / COUNT([client_id]) * 100' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column caption='Total Clients' datatype='integer' name='[client_id]' role='measure' type='quantitative' />
+            <column datatype='boolean' name='[es_error]' role='dimension' type='nominal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1242712036561858572]' derivation='User' name='[usr:Calculation_1242712036561858572:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' />
+              <text column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[usr:Calculation_1242712036561858572:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[usr:Calculation_1242712036561858572:qk]</rows>
+        <cols>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{6D445B78-7725-4FA1-908B-DD04F440A150}' />
+    </worksheet>
+    <worksheet name='Hoja 6'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_web' name='federated.0m1lps31l35gpa14h4rg71w7f1b6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1lps31l35gpa14h4rg71w7f1b6'>
+            <column caption='Error rate' datatype='real' name='[Calculation_1242712036561858572]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [es_error] THEN 1 ELSE 0 END) / COUNT([client_id]) * 100' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column caption='Total Clients' datatype='integer' name='[client_id]' role='measure' type='quantitative' />
+            <column datatype='boolean' name='[es_error]' role='dimension' type='nominal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column caption='Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1242712036561858572]' derivation='User' name='[usr:Calculation_1242712036561858572:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[usr:Calculation_1242712036561858572:qk]</rows>
+        <cols>([federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:process_step:nk] / [federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk])</cols>
+      </table>
+      <simple-id uuid='{AD05BE9B-A202-4975-9BBA-DEAF3619A731}' />
+    </worksheet>
+    <worksheet name='Hoja 8'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_web' name='federated.0m1lps31l35gpa14h4rg71w7f1b6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1lps31l35gpa14h4rg71w7f1b6'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column caption='Total Clients' datatype='integer' name='[client_id]' role='measure' type='quantitative' />
+            <column-instance column='[client_id]' derivation='Count' name='[cnt:client_id:qk]' pivot='key' type='quantitative' />
+            <column datatype='boolean' name='[es_error]' role='dimension' type='nominal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[es_error]' derivation='None' name='[none:es_error:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column caption='Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:es_error:nk]'>
+            <groupfilter function='member' level='[none:es_error:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:es_error:nk]</column>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:process_step:nk]' value='85' />
+            <format attr='height' field='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' value='73' />
+            <format attr='font-size' data-class='total' value='20' />
+            <format attr='font-size' data-class='subtotal' value='20' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='total' value='20' />
+            <format attr='font-size' data-class='subtotal' value='20' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[cnt:client_id:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[cnt:client_id:qk]' />
+              <text column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[cnt:client_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</rows>
+        <cols>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:process_step:nk]</cols>
+      </table>
+      <simple-id uuid='{653AC1D5-BBDA-4A3E-9AFB-061976535D78}' />
+    </worksheet>
+    <worksheet name='Hoja 9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Clients by variation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_web' name='federated.0m1lps31l35gpa14h4rg71w7f1b6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m1lps31l35gpa14h4rg71w7f1b6'>
+            <column caption='Paso válido' datatype='integer' name='[Calculation_1242712036591693839]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF NOT [es_error] AND NOT [repetido_mismo_paso] AND NOT [retroceso_cero] AND NOT [salto_grande_atras] THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Suma pasos válidos por cliente' datatype='integer' name='[Calculation_1242712036591779856]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [client_id] : SUM([Calculation_1242712036591693839]) }' />
+            </column>
+            <column caption='Success at the first time' datatype='string' name='[Calculation_1242712036591923217]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1242712036591779856] = 5 THEN &apos;Success&apos; ELSE &apos;No success&apos; END' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column caption='Total Clients' datatype='integer' name='[client_id]' role='measure' type='quantitative' />
+            <column-instance column='[client_id]' derivation='CountD' name='[ctd:client_id:qk]' pivot='key' type='quantitative' />
+            <column datatype='boolean' name='[es_error]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1242712036591923217]' derivation='None' name='[none:Calculation_1242712036591923217:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column caption='Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[repetido_mismo_paso]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[retroceso_cero]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[salto_grande_atras]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Control&quot;' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='&quot;Test&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:process_step:nk]'>
+            <groupfilter function='member' level='[none:process_step:nk]' member='&quot;confirm&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:process_step:nk]</column>
+            <column>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' value='159' />
+            <format attr='height' field='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Calculation_1242712036591923217:nk]' value='42' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Calculation_1242712036591923217:nk]' value='168' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[ctd:client_id:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[ctd:client_id:qk]' />
+              <text column='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[ctd:client_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Calculation_1242712036591923217:nk]</rows>
+        <cols>[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{4793762D-4858-4AB0-9BC5-EAB12A45200B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Completion Rate'>
+      <style />
+      <size maxheight='860' maxwidth='750' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98134' id='18' param='horz' type-v2='layout-flow' w='97866' x='1067' y='933'>
+            <zone h='98134' id='16' type-v2='layout-basic' w='97866' x='1067' y='933'>
+              <zone h='76080' id='7' param='horz' type-v2='layout-flow' w='97866' x='1067' y='22987'>
+                <zone h='76080' id='5' type-v2='layout-basic' w='97866' x='1067' y='22987'>
+                  <zone h='51276' id='3' name='Hoja 1' w='91333' x='1067' y='22987'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='76080' id='12' type-v2='empty' w='6533' x='92400' y='22987'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='24804' id='15' name='Hoja 9' w='67600' x='1067' y='74263'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='24804' id='19' type-v2='text' w='23733' x='68667' y='74263'>
+                    <formatted-text>
+                      <run fontsize='12'>Completion rate at the </run>
+                      <run bold='true' fontsize='12'>first time</run>
+                      <run fontsize='12'>:</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#333333' fontname='Consolas' fontsize='11'>Control    47.388882</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#333333' fontname='Consolas' fontsize='11'>Test       43.672071</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone fixed-size='275' h='22054' id='9' is-fixed='true' name='Hoja 2' w='82400' x='1067' y='933'>
+                <layout-cache fixed-size-w='262' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='22054' id='8' name='Hoja 1' pane-specification-id='0' param='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' type-v2='color' w='15466' x='83467' y='933'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='22' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='182' h='22054' id='9' is-fixed='true' name='Hoja 2' w='82400' x='1067' y='933'>
+                  <layout-cache fixed-size-w='262' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51276' id='3' is-fixed='true' name='Hoja 1' w='91333' x='1067' y='22987'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='22054' id='8' name='Hoja 1' pane-specification-id='0' param='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' type-v2='color' w='15466' x='83467' y='933'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='205' h='24804' id='15' is-fixed='true' name='Hoja 9' w='67600' x='1067' y='74263'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='24804' id='19' type-v2='text' w='23733' x='68667' y='74263'>
+                  <formatted-text>
+                    <run fontsize='12'>Completion rate at the </run>
+                    <run bold='true' fontsize='12'>first time</run>
+                    <run fontsize='12'>:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Consolas' fontsize='11'>Control    47.388882</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#333333' fontname='Consolas' fontsize='11'>Test       43.672071</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{738A7136-DD26-4399-9BFC-97069CEF0712}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Error Rate'>
+      <style />
+      <size maxheight='860' maxwidth='850' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98134' id='7' param='horz' type-v2='layout-flow' w='98118' x='941' y='933'>
+            <zone h='98134' id='5' type-v2='layout-basic' w='75883' x='941' y='933'>
+              <zone h='28589' id='3' name='Hoja 8' w='75883' x='941' y='70478'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='69545' id='9' name='Hoja 6' w='75883' x='941' y='933'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='189' h='98134' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='22235' x='76824' y='933'>
+              <zone h='7701' id='10' name='Hoja 6' pane-specification-id='0' param='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' type-v2='color' w='22235' x='76824' y='933'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90433' id='11' name='Hoja 5' w='22235' x='76824' y='8634'>
+                <layout-cache cell-count-w='2' minheight='195' non-cell-size-w='63' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='16' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='69545' id='9' is-fixed='true' name='Hoja 6' w='75883' x='941' y='933'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7701' id='10' name='Hoja 6' pane-specification-id='0' param='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' type-v2='color' w='22235' x='76824' y='933'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90433' id='11' is-fixed='true' name='Hoja 5' w='22235' x='76824' y='8634'>
+                  <layout-cache cell-count-w='2' minheight='195' non-cell-size-w='63' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='238' h='28589' id='3' is-fixed='true' name='Hoja 8' w='75883' x='941' y='70478'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A4DBCB4A-5491-49B2-A019-E82B54D8FAD5}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Time invested'>
+      <style />
+      <size maxheight='860' maxwidth='750' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='76621' id='7' param='horz' type-v2='layout-flow' w='97866' x='1067' y='22419'>
+            <zone h='76621' id='5' type-v2='layout-basic' w='97866' x='1067' y='22419'>
+              <zone h='48560' id='3' name='Hoja 3' w='97866' x='1067' y='50480'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='28061' id='9' name='Hoja 4' w='97866' x='1067' y='22419'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='21459' id='12' name='Hoja 10' w='97866' x='1067' y='960'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='15' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='177' h='21459' id='12' is-fixed='true' name='Hoja 10' w='97866' x='1067' y='960'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='233' h='28061' id='9' is-fixed='true' name='Hoja 4' w='97866' x='1067' y='22419'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48560' id='3' is-fixed='true' name='Hoja 3' w='97866' x='1067' y='50480'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C1B12A84-460C-4057-834A-4E2EF07AE6AF}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B3122E5-4CE8-410C-ACC0-E7D89C408462}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Hoja 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E46B0656-F4B7-4398-BF5A-65452DD8F24A}' />
+    </window>
+    <window class='worksheet' name='Hoja 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[ctd:client_id:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E139FC44-FB30-419B-83A3-954CBE8EE4A5}' />
+    </window>
+    <window class='dashboard' name='Completion Rate'>
+      <viewpoints>
+        <viewpoint name='Hoja 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 2' />
+        <viewpoint name='Hoja 9' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{44C3594A-3B42-4395-AC39-A9945585783B}' />
+    </window>
+    <window class='worksheet' name='Hoja 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DE93DB85-0E79-4C52-9124-8E54B931AF28}' />
+    </window>
+    <window class='worksheet' name='Hoja 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{042FBB9C-A920-412B-96C9-2B62EDA084A8}' />
+    </window>
+    <window class='worksheet' name='Hoja 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{98952C36-28CA-48EB-A255-300A432E0E13}' />
+    </window>
+    <window class='dashboard' name='Time invested'>
+      <viewpoints>
+        <viewpoint name='Hoja 10' />
+        <viewpoint name='Hoja 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 4' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3F17670A-597F-4667-ABAA-28F077F4000B}' />
+    </window>
+    <window class='worksheet' name='Hoja 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F3F73F63-5737-4B13-B6A4-DABC78DC7B92}' />
+    </window>
+    <window class='worksheet' name='Hoja 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1AE097D4-E46B-45E5-86C5-DED1BA807A94}' />
+    </window>
+    <window class='worksheet' name='Hoja 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0m1lps31l35gpa14h4rg71w7f1b6].[cnt:client_id:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{54A53D29-A625-4827-A992-6FCCCD32B779}' />
+    </window>
+    <window class='dashboard' name='Error Rate'>
+      <viewpoints>
+        <viewpoint name='Hoja 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 8' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{92DE3AA3-6305-4B98-8637-DFA598E29CD1}' />
+    </window>
+  </windows>
+</workbook>
