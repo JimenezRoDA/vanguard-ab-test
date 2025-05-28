@@ -1,7 +1,10 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-# --- Configuración inicial ---
+# Para ejecutar, primero en la terminal: pip install -r requirements.txt
+# Después: streamlit run app.py
+
+# Configuración inicial
 st.set_page_config(page_title="Vanguard Analytics", layout="wide")
 
 # --- Cargar CSS ---
