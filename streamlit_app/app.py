@@ -42,7 +42,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# --- CSS GLOBAL PARA EL FONDO DE LA SIDEBAR DE STREAMLIT ---
+# CSS GLOBAL PARA EL FONDO DE LA SIDEBAR DE STREAMLIT
 # Este CSS se inyecta para cambiar el color de fondo de toda la st.sidebar
 st.markdown(
     """
@@ -497,7 +497,7 @@ However, the increase is below the **+5% threshold**, so it doesn’t meet the b
 **H₀**: first_attempt_success(Control) = first_attempt_success(Test)  
 **H₁**: first_attempt_success(Control) ≠ first_attempt_success(Test)  
 We performed the test and rejected **H₀**.  
-:apuntando_hacia_la_derecha: So, the difference in first attempt success rate is statistically significant.  
+✅ So, the difference in first attempt success rate is statistically significant.  
 Although more users in the Test group completed the process, the success rate on the first attempt was **lower** than in the Control group (**43.67% vs. 47.39%**).
                 """)
 
@@ -546,7 +546,7 @@ Although more users in the Test group completed the process, the success rate on
 **H₀**: error_rate(Control) ≤ error_rate(Test)  
 **H₁**: error_rate(Control) > error_rate(Test)  
 We performed the test and rejected **H₀**.  
-:apuntando_hacia_la_derecha: So, the global error rate in **Control** is significantly higher than in **Test**.  
+✅ So, the global error rate in **Control** is significantly higher than in **Test**.  
 Control had an error rate of **0.19%**, while Test reduced this to **0.07%**, indicating a clear improvement in the new design’s performance.
                 """)
 
@@ -556,6 +556,7 @@ elif st.session_state.current_page_key == "Statistics":
 
 elif st.session_state.current_page_key == "ML/DP":
     st.title("ML / Deep Learning")
+    
 elif st.session_state.current_page_key == "Conclusions":
     st.title("🔍 Conclusions")
 
