@@ -163,6 +163,6 @@ You can explore the full dashboard here:
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
 ![Tableau](https://img.shields.io/badge/Tableau-Visualization-orange?logo=tableau)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)
-![Status](https://img.shields.io/badge/Estado-Terminado-brightgreen)
+![Status](https://img.shields.io/badge/Status-Finished-brightgreen)
 
 [🔝 Back to top](#top)
